@@ -48,12 +48,12 @@ jobs:
       - name: Build with VitePress
         run: |
           npm run docs:build
-          ls -lah docs/.vitepress
-          ls -lah docs/.vitepress/dist || echo "VitePress build failed or dist is missing"
+          ls -lah .vitepress
+          ls -lah .vitepress/dist || echo "VitePress build failed or dist is missing"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/.vitepress/dist
+          path: .vitepress/dist
 
   # Deployment job
   deploy:
