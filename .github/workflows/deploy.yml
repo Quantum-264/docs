@@ -46,7 +46,10 @@ jobs:
       - name: Install dependencies
         run: npm ci # or pnpm install / yarn install / bun install
       - name: Build with VitePress
-        run: npm run docs:build
+        run: |
+          npm run docs:build
+          ls -lah docs/.vitepress
+          ls -lah docs/.vitepress/dist || echo "VitePress build failed or dist is missing"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
