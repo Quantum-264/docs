@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import { withSidebar } from 'vitepress-sidebar'
 
 const vitePressConfigs = {
+  base: '/docs/',
   title: 'Quantum 264 Devblog',
   description: 'A place to hold all things related to Quantum 264',
   themeConfig: {
