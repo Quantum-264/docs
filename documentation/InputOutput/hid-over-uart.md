@@ -20,7 +20,7 @@ Below shows how to wire up both using the RP2040 as the Keyboard host as well as
 
 > Note: I am using the PicoVision as my CPU, I can leave the power and UART connected when programming the RP2040. I have not tested this direct into a Pico, I don't think it will conflict as unlike an Arduino the USB Boot mode doesn't work over UART. If it does conflict, just unplug V-BUS or put a switch on V-BUS for programming mode. 
 
-![pico-vision wiring](../../../blog/2025/03/14.png)
+![pico-vision wiring](../../blog/2025/03/14.png)
 
 # Message Format
 
