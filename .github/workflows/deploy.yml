@@ -47,7 +47,7 @@ jobs:
         run: npm ci # or pnpm install / yarn install / bun install
       - name: Build with VitePress
         run: |
-          npm run docs:build
+          npm run build
           ls -lah .vitepress
           ls -lah .vitepress/dist || echo "VitePress build failed or dist is missing"
       - name: Upload artifact
